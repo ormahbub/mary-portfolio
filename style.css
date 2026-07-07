@@ -12,7 +12,7 @@
   --accent-color: #fd6e0a;
   --bg-color: #fff8f3;
   --light-color: #ffffff;
-  --dark-color: #000000;
+  --dark-color: #181818;
 }
 .container {
   width: 1140px;
@@ -31,6 +31,18 @@
   background-color: #ff9448;
   border-color: #ff9448;
   color: var(--light-color);
+}
+.section-title {
+  font-size: 32px;
+  text-align: center;
+  color: var(--dark-color);
+  font-weight: 700;
+}
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+  font-weight: 400;
 }
 
 /* Styles for Header Section */
@@ -85,6 +97,7 @@ nav ul li a:hover {
   font-size: 64px;
   font-weight: 700;
   line-height: 72px;
+  color: var(--dark-color);
 }
 #hero-section h1 span {
   font-size: 40px;
@@ -93,11 +106,8 @@ nav ul li a:hover {
   line-height: 48px;
 }
 #hero-section p {
-  font-size: 16px;
-  line-height: 24px;
   margin: 20px 0;
-  font-weight: 400;
-  color: var(--text-color);
+  text-align: left;
 }
 #hero-section .hero-buttons {
   display: flex;
@@ -118,6 +128,12 @@ nav ul li a:hover {
   width: 600px;
 }
 
+#hero-section .hero-right-content {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
 #hero-section .header-floating-text {
   position: absolute;
   top: 50%;
@@ -128,4 +144,44 @@ nav ul li a:hover {
   font-weight: 800;
   color: var(--text-color);
   opacity: 0.25;
+}
+
+/* Styling for About Section */
+#about-section {
+  padding: 100px 0;
+}
+#about-section .container {
+  padding: 60px;
+  border-radius: 14px;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#about-section p {
+  width: 80%;
+  padding: 20px 0;
+  text-align: center;
+}
+#about-section ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  gap: 40px;
+}
+#about-section ul h3 {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--text-color);
+}
+#about-section ul p {
+  font-size: 16px;
+  padding: 5px 0 0 0;
+  font-weight: 500;
+  width: 100%;
+  color: var(--dark-color);
 }
