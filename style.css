@@ -1,6 +1,57 @@
+/* Reset and Default Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --text-color: #474747;
+  --accent-color: #fd6e0a;
+  --light-color: #ffffff;
+  --dark-color: #000000;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.btn {
+  background-color: var(--accent-color);
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #ff9448;
+  color: var(--light-color);
+}
+
+/* Styles for Header Section */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo img {
+  width: 100px;
+}
+nav ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+}
+nav ul li a:hover {
+  color: var(--accent-color);
 }
